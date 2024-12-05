@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Groups</title>
+</head>
+<body>
+    <h1>Create Gorups</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="group_name">Groups Name</label><br>
+        <input type="text" name="group_name" id="group_name" required><br>
+
+        <label for="group_type">Groups Type</label><br>
+        <input type="text" name="group_type" id="group_type"><br>
+
+        <input type="submit" value="Create groups">
+
+        <a href="{% url 'home' %}">Back to Home</a><br>
+        <a href="{% url 'groups:group_list' %}">Back to List</a><br>
+    </form>
+</body>
+</html>

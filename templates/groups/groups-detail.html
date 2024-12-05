@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ groups.group_name }} {{ groups.group_type }}</title>
+</head>
+<body>
+    <h1>{{ groups.group_name }} {{ groups.group_type }}</h1>
+    <h3>Details:</h3>
+    <a href="{% url 'groups:delete' pk=groups.pk %}">Delete</a><br>
+    <a href="{% url 'groups:group_list' %}">Back to list</a>
+</body>
+</html>

@@ -10,6 +10,6 @@
     <h3>Age: {{ students.age }}</h3>
     <h3>Email: {{ students.email }}</h3>
     <a href="{% url 'students:delete' pk=students.pk %}">Delete</a><br>
-    <a href="{% url 'students:list' %}">Back to list</a>
+    <a href="{% url 'students:student_list' %}">Back to list</a>
 </body>
 </html>

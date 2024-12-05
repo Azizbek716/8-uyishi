@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Create Student</title>
+    <title>Create Teacher</title>
 </head>
 <body>
-    <h1>Create Student</h1>
+    <h1>Create Teacher</h1>
     <form method="post">
         {% csrf_token %}
         <label for="first_name">First Name</label><br>
@@ -19,11 +19,11 @@
 
         <label for="email">Email</label><br>
         <input type="text" name="email" id="email"><br>
-        <input type="submit" value="Create students">
-
-        <a href="{% url 'home' %}">Back to Home</a><br>
-        <a href="{% url 'students:student_list' %}">Back to List</a><br>
+        <input type="submit" value="Create teachers">
 
     </form>
+
+    <a href="{% url 'teachers:teacher_list' %}">Back to List</a>
+<a href="{% url 'home' %}">Home</a>
 </body>
 </html>
